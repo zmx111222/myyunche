@@ -1,0 +1,6 @@
+[DEBUG] 2018-08-14 16:39:19.673 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-14 16:39:19.842 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-14 16:39:20.153 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-14 16:39:20.328 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-14 16:39:20.329 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-14 16:39:20.334 [main] selectProperty - <==      Total: 1

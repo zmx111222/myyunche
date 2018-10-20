@@ -1,0 +1,5 @@
+[DEBUG] 2018-08-12 23:42:44.643 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-12 23:42:44.719 [main] selectProperty - <==      Total: 0
+[DEBUG] 2018-08-12 23:42:44.723 [main] insertProperty - ==>  Preparing: insert into ACT_GE_PROPERTY ( NAME_, VALUE_, REV_ ) values ( ?, ?, 1 ) 
+[DEBUG] 2018-08-12 23:42:44.749 [main] insertProperty - ==> Parameters: cfg.execution-related-entities-count(String), false(String)
+[DEBUG] 2018-08-12 23:42:44.751 [main] insertProperty - <==    Updates: 1

@@ -1,0 +1,186 @@
+[DEBUG] 2018-08-19 11:06:29.633 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:06:29.769 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:06:29.847 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:06:29.927 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:06:29.927 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:06:29.929 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:10:36.806 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:10:36.852 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:10:36.862 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:10:36.879 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:10:36.880 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:10:36.881 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:16:50.249 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:16:50.289 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:16:50.297 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:16:50.313 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:16:50.313 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:16:50.316 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:19:55.265 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:19:55.323 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:19:55.334 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:19:55.350 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:19:55.351 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:19:55.352 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:21:54.358 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:21:54.399 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:21:54.409 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:21:54.425 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:21:54.425 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:21:54.427 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:23:40.711 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:23:40.751 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:23:40.761 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:23:40.776 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:23:40.776 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:23:40.777 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:26:44.257 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:26:44.299 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:26:44.310 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:26:44.325 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:26:44.326 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:26:44.327 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:28:04.767 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:28:04.808 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:28:04.818 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:28:04.833 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:28:04.833 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:28:04.834 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:30:10.803 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:30:10.840 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:30:10.849 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:30:10.864 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:30:10.864 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:30:10.865 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:32:48.113 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:32:48.152 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:32:48.162 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:32:48.175 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:32:48.175 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:32:48.177 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:34:24.780 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:34:24.825 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:34:24.836 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:34:24.854 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:34:24.854 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:34:24.856 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:35:28.154 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:35:28.195 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:35:28.204 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:35:28.219 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:35:28.220 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:35:28.221 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:44:15.742 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:44:15.897 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 11:44:15.908 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 11:44:16.014 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 11:44:16.015 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 11:44:16.017 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:58:17.769 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 13:58:17.811 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 13:58:17.821 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:58:17.838 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 13:58:17.838 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 13:58:17.840 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:59:30.950 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 13:59:30.993 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 13:59:31.002 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:59:31.017 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 13:59:31.018 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 13:59:31.019 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:59:36.596 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 13:59:36.597 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-19 13:59:36.599 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 13:59:36.601 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-19 13:59:36.645 [main] updateProperty - ==> Parameters: 2(Integer), 2501(String), next.dbid(String), 1(Integer)
+[DEBUG] 2018-08-19 13:59:36.768 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-19 13:59:40.541 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-19 13:59:40.654 [main] selectLatestProcessDefinitionByKey - ==> Parameters: loan_process(String), loan_process(String)
+[DEBUG] 2018-08-19 13:59:40.748 [main] selectLatestProcessDefinitionByKey - <==      Total: 0
+[DEBUG] 2018-08-19 13:59:40.759 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 13:59:40.786 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), loan_process(String)
+[DEBUG] 2018-08-19 13:59:40.838 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-19 13:59:40.855 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-19 13:59:40.857 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: loan_process:1:4(String)
+[DEBUG] 2018-08-19 13:59:40.860 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 13:59:40.862 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 13:59:40.879 [main] insertProcessDefinition - ==> Parameters: loan_process:1:4(String), http://www.activiti.org/test(String), 消费贷流程(String), loan_process(String), 1(Integer), 1(String), processes/loan_process.bpmn(String), processes/loan_process.loan_process.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-19 13:59:40.908 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-19 13:59:40.908 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 13:59:40.911 [main] insertDeployment - ==> Parameters: 1(String), 消费贷流程(String), null, null, (String), 2018-08-19 13:59:36.593(Timestamp), null
+[DEBUG] 2018-08-19 13:59:40.938 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-19 13:59:41.046 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 13:59:41.048 [main] bulkInsertResource - ==> Parameters: 2(String), processes/loan_process.bpmn(String), java.io.ByteArrayInputStream@77f04d1a(ByteArrayInputStream), 1(String), false(Boolean), 3(String), processes/loan_process.loan_process.png(String), java.io.ByteArrayInputStream@27682fa9(ByteArrayInputStream), 1(String), true(Boolean)
+[DEBUG] 2018-08-19 13:59:41.177 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-08-19 14:01:19.873 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 14:01:19.915 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 14:01:19.923 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 14:01:19.938 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 14:01:19.938 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 14:01:19.941 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 14:01:25.054 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 14:01:25.055 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-19 14:01:25.057 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 14:01:25.060 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-19 14:01:25.068 [main] updateProperty - ==> Parameters: 3(Integer), 5001(String), next.dbid(String), 2(Integer)
+[DEBUG] 2018-08-19 14:01:25.069 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-19 14:01:27.129 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-19 14:01:27.138 [main] selectLatestProcessDefinitionByKey - ==> Parameters: loan_process(String), loan_process(String)
+[DEBUG] 2018-08-19 14:01:27.143 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-08-19 14:01:27.227 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 14:01:27.229 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), loan_process:1:4(String)
+[DEBUG] 2018-08-19 14:01:27.232 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 14:01:27.233 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 14:01:27.234 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), loan_process:1:4(String)
+[DEBUG] 2018-08-19 14:01:27.235 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 14:01:27.236 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 14:01:27.242 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), loan_process(String)
+[DEBUG] 2018-08-19 14:01:27.245 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-19 14:01:27.249 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-19 14:01:27.251 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: loan_process:2:2504(String)
+[DEBUG] 2018-08-19 14:01:27.253 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 14:01:27.254 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 14:01:27.266 [main] insertProcessDefinition - ==> Parameters: loan_process:2:2504(String), http://www.activiti.org/test(String), 消费贷流程(String), loan_process(String), 2(Integer), 2501(String), processes/loan_process.bpmn(String), processes/loan_process.loan_process.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-19 14:01:27.268 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-19 14:01:27.268 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 14:01:27.271 [main] insertDeployment - ==> Parameters: 2501(String), 消费贷流程(String), null, null, (String), 2018-08-19 14:01:25.052(Timestamp), null
+[DEBUG] 2018-08-19 14:01:27.274 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-19 14:01:27.279 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 14:01:27.281 [main] bulkInsertResource - ==> Parameters: 2502(String), processes/loan_process.bpmn(String), java.io.ByteArrayInputStream@50013a15(ByteArrayInputStream), 2501(String), false(Boolean), 2503(String), processes/loan_process.loan_process.png(String), java.io.ByteArrayInputStream@6c46dc02(ByteArrayInputStream), 2501(String), true(Boolean)
+[DEBUG] 2018-08-19 14:01:27.384 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-08-19 16:11:49.238 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 16:11:49.282 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-19 16:11:49.290 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 16:11:49.305 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 16:11:49.305 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-19 16:11:49.307 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 16:11:54.735 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-19 16:11:54.736 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-19 16:11:54.782 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-19 16:11:54.786 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-19 16:11:54.800 [main] updateProperty - ==> Parameters: 4(Integer), 7501(String), next.dbid(String), 3(Integer)
+[DEBUG] 2018-08-19 16:11:54.801 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-19 16:11:56.828 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-19 16:11:56.837 [main] selectLatestProcessDefinitionByKey - ==> Parameters: loan_process(String), loan_process(String)
+[DEBUG] 2018-08-19 16:11:56.930 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-08-19 16:11:56.984 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 16:11:56.988 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), loan_process:2:2504(String)
+[DEBUG] 2018-08-19 16:11:56.991 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 16:11:56.992 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 16:11:56.993 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), loan_process:2:2504(String)
+[DEBUG] 2018-08-19 16:11:56.994 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 16:11:56.995 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-19 16:11:57.001 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), loan_process(String)
+[DEBUG] 2018-08-19 16:11:57.005 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-19 16:11:57.009 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-19 16:11:57.010 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: loan_process:3:5004(String)
+[DEBUG] 2018-08-19 16:11:57.012 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-19 16:11:57.013 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 16:11:57.023 [main] insertProcessDefinition - ==> Parameters: loan_process:3:5004(String), http://www.activiti.org/test(String), 消费贷流程(String), loan_process(String), 3(Integer), 5001(String), processes/loan_process.bpmn(String), processes/loan_process.loan_process.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-19 16:11:57.050 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-19 16:11:57.050 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 16:11:57.055 [main] insertDeployment - ==> Parameters: 5001(String), 消费贷流程(String), null, null, (String), 2018-08-19 16:11:54.733(Timestamp), null
+[DEBUG] 2018-08-19 16:11:57.057 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-19 16:11:57.061 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-19 16:11:57.063 [main] bulkInsertResource - ==> Parameters: 5002(String), processes/loan_process.bpmn(String), java.io.ByteArrayInputStream@3faa55(ByteArrayInputStream), 5001(String), false(Boolean), 5003(String), processes/loan_process.loan_process.png(String), java.io.ByteArrayInputStream@1ab502f6(ByteArrayInputStream), 5001(String), true(Boolean)
+[DEBUG] 2018-08-19 16:11:57.149 [main] bulkInsertResource - <==    Updates: 2

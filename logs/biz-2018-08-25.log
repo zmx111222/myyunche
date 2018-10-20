@@ -1,0 +1,90 @@
+[DEBUG] 2018-08-25 22:24:49.249 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:24:49.385 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-25 22:24:49.641 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:24:49.760 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:24:49.760 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-25 22:24:49.762 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:24:57.508 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:24:57.509 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-25 22:24:57.567 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:24:57.569 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-25 22:24:57.632 [main] updateProperty - ==> Parameters: 5(Integer), 10001(String), next.dbid(String), 4(Integer)
+[DEBUG] 2018-08-25 22:24:57.991 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-25 22:41:04.807 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:41:04.889 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-25 22:41:04.898 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:41:04.946 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:41:04.946 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-25 22:41:04.947 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:41:12.903 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:41:12.904 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-25 22:41:12.906 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:41:12.908 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-25 22:41:12.961 [main] updateProperty - ==> Parameters: 6(Integer), 12501(String), next.dbid(String), 5(Integer)
+[DEBUG] 2018-08-25 22:41:13.136 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-25 22:42:52.947 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:42:52.983 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-25 22:42:53.381 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:42:53.399 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:42:53.399 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-25 22:42:53.401 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:42:58.183 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:42:58.184 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-25 22:42:58.186 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:42:58.189 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-25 22:42:58.197 [main] updateProperty - ==> Parameters: 7(Integer), 15001(String), next.dbid(String), 6(Integer)
+[DEBUG] 2018-08-25 22:42:59.253 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-25 22:43:08.343 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-25 22:43:08.460 [main] selectLatestProcessDefinitionByKey - ==> Parameters: myProcess(String), myProcess(String)
+[DEBUG] 2018-08-25 22:43:09.148 [main] selectLatestProcessDefinitionByKey - <==      Total: 0
+[DEBUG] 2018-08-25 22:43:09.168 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-25 22:43:09.203 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), myProcess(String)
+[DEBUG] 2018-08-25 22:43:09.348 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-25 22:43:09.373 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-25 22:43:09.374 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: myProcess:1:12504(String)
+[DEBUG] 2018-08-25 22:43:09.533 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-25 22:43:09.535 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:43:09.617 [main] insertProcessDefinition - ==> Parameters: myProcess:1:12504(String), http://www.activiti.org/test(String), My process(String), myProcess(String), 1(Integer), 12501(String), processes/MyProcess.bpmn(String), processes/MyProcess.myProcess.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-25 22:43:09.779 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-25 22:43:09.779 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:43:09.785 [main] insertDeployment - ==> Parameters: 12501(String), 出差报销流程(String), null, null, (String), 2018-08-25 22:42:58.181(Timestamp), null
+[DEBUG] 2018-08-25 22:43:09.949 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-25 22:43:10.025 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:43:10.027 [main] bulkInsertResource - ==> Parameters: 12502(String), processes/MyProcess.bpmn(String), java.io.ByteArrayInputStream@6ba08a09(ByteArrayInputStream), 12501(String), false(Boolean), 12503(String), processes/MyProcess.myProcess.png(String), java.io.ByteArrayInputStream@568c9ee1(ByteArrayInputStream), 12501(String), true(Boolean)
+[DEBUG] 2018-08-25 22:43:10.273 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-08-25 22:45:28.185 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:45:28.219 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-25 22:45:28.230 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:45:28.243 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:45:28.243 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-25 22:45:28.244 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:45:32.779 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-25 22:45:32.780 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-25 22:45:32.783 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-25 22:45:32.785 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-25 22:45:32.794 [main] updateProperty - ==> Parameters: 8(Integer), 17501(String), next.dbid(String), 7(Integer)
+[DEBUG] 2018-08-25 22:45:32.836 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-25 22:45:33.415 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-25 22:45:33.424 [main] selectLatestProcessDefinitionByKey - ==> Parameters: myProcess(String), myProcess(String)
+[DEBUG] 2018-08-25 22:45:33.586 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-08-25 22:45:33.671 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-25 22:45:33.674 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), myProcess:1:12504(String)
+[DEBUG] 2018-08-25 22:45:33.710 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-25 22:45:33.710 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-25 22:45:33.711 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), myProcess:1:12504(String)
+[DEBUG] 2018-08-25 22:45:33.712 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-25 22:45:33.713 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-25 22:45:33.718 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), myProcess(String)
+[DEBUG] 2018-08-25 22:45:33.721 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-25 22:45:33.724 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-25 22:45:33.725 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: myProcess:2:15004(String)
+[DEBUG] 2018-08-25 22:45:33.727 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-25 22:45:33.727 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:45:33.737 [main] insertProcessDefinition - ==> Parameters: myProcess:2:15004(String), http://www.activiti.org/test(String), My process(String), myProcess(String), 2(Integer), 15001(String), processes/MyProcess.bpmn(String), processes/MyProcess.myProcess.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-25 22:45:33.739 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-25 22:45:33.739 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:45:33.741 [main] insertDeployment - ==> Parameters: 15001(String), 出差报销流程(String), null, null, (String), 2018-08-25 22:45:32.777(Timestamp), null
+[DEBUG] 2018-08-25 22:45:33.744 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-25 22:45:33.747 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-25 22:45:33.750 [main] bulkInsertResource - ==> Parameters: 15002(String), processes/MyProcess.bpmn(String), java.io.ByteArrayInputStream@486dd616(ByteArrayInputStream), 15001(String), false(Boolean), 15003(String), processes/MyProcess.myProcess.png(String), java.io.ByteArrayInputStream@a1d926b(ByteArrayInputStream), 15001(String), true(Boolean)
+[DEBUG] 2018-08-25 22:45:33.761 [main] bulkInsertResource - <==    Updates: 2

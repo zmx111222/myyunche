@@ -1,0 +1,400 @@
+[DEBUG] 2018-09-09 13:32:49.499 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:32:49.553 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 13:32:49.561 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:32:49.668 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:32:49.668 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 13:32:49.670 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:35:57.203 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:35:57.239 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 13:35:57.247 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:35:57.261 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:35:57.261 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 13:35:57.263 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:37:13.651 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:37:13.686 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 13:37:13.693 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:37:13.708 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:37:13.708 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 13:37:13.709 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:37:28.223 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 13:37:28.224 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 13:37:28.237 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 13:37:28.240 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 13:37:28.247 [main] updateProperty - ==> Parameters: 16(Integer), 37501(String), next.dbid(String), 15(Integer)
+[DEBUG] 2018-09-09 13:37:28.249 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 13:37:30.300 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 13:37:30.353 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave(String), leave(String)
+[DEBUG] 2018-09-09 13:37:30.387 [main] selectLatestProcessDefinitionByKey - <==      Total: 0
+[DEBUG] 2018-09-09 13:37:30.392 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 13:37:30.418 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), leave(String)
+[DEBUG] 2018-09-09 13:37:30.460 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-09-09 13:37:30.486 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 13:37:30.487 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave:1:35004(String)
+[DEBUG] 2018-09-09 13:37:30.490 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 13:37:30.490 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 13:37:30.520 [main] insertProcessDefinition - ==> Parameters: leave:1:35004(String), http://www.kafeitu.me/demo/activiti/leave(String), 请假流程(String), leave(String), 1(Integer), 35001(String), processes/leave/leave.bpmn(String), processes/leave/leave.leave.png(String), 请假流程演示(String), false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-09-09 13:37:30.522 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-09-09 13:37:30.523 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 13:37:30.528 [main] insertDeployment - ==> Parameters: 35001(String), 邮件流程(String), null, null, (String), 2018-09-09 13:37:28.213(Timestamp), null
+[DEBUG] 2018-09-09 13:37:30.562 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-09-09 13:37:30.657 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 13:37:30.659 [main] bulkInsertResource - ==> Parameters: 35002(String), processes/leave/leave.bpmn(String), java.io.ByteArrayInputStream@1dce481b(ByteArrayInputStream), 35001(String), false(Boolean), 35003(String), processes/leave/leave.leave.png(String), java.io.ByteArrayInputStream@22cb8e5f(ByteArrayInputStream), 35001(String), true(Boolean)
+[DEBUG] 2018-09-09 13:37:30.829 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-09-09 14:14:11.154 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:14:11.192 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 14:14:11.199 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:14:11.214 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:14:11.214 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 14:14:11.216 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:14:16.240 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:14:16.241 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 14:14:16.285 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:14:16.287 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 14:14:16.293 [main] updateProperty - ==> Parameters: 17(Integer), 40001(String), next.dbid(String), 16(Integer)
+[DEBUG] 2018-09-09 14:14:16.326 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 14:14:16.950 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 14:14:16.959 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave(String), leave(String)
+[DEBUG] 2018-09-09 14:14:17.068 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-09-09 14:14:17.126 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:14:17.129 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), leave:1:35004(String)
+[DEBUG] 2018-09-09 14:14:17.134 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:14:17.135 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:14:17.136 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), leave:1:35004(String)
+[DEBUG] 2018-09-09 14:14:17.137 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:14:17.138 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:14:17.144 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), leave(String)
+[DEBUG] 2018-09-09 14:14:17.145 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-09-09 14:14:17.149 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 14:14:17.150 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave:2:37504(String)
+[DEBUG] 2018-09-09 14:14:17.151 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:14:17.152 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:14:17.164 [main] insertProcessDefinition - ==> Parameters: leave:2:37504(String), http://www.kafeitu.me/demo/activiti/leave(String), 请假流程(String), leave(String), 2(Integer), 37501(String), processes/leave/leave.bpmn(String), processes/leave/leave.leave.png(String), 请假流程演示(String), false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-09-09 14:14:17.180 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-09-09 14:14:17.180 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:14:17.183 [main] insertDeployment - ==> Parameters: 37501(String), 请假流程(String), null, null, (String), 2018-09-09 14:14:16.239(Timestamp), null
+[DEBUG] 2018-09-09 14:14:17.268 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-09-09 14:14:17.272 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:14:17.275 [main] bulkInsertResource - ==> Parameters: 37502(String), processes/leave/leave.bpmn(String), java.io.ByteArrayInputStream@301770d9(ByteArrayInputStream), 37501(String), false(Boolean), 37503(String), processes/leave/leave.leave.png(String), java.io.ByteArrayInputStream@40edc64e(ByteArrayInputStream), 37501(String), true(Boolean)
+[DEBUG] 2018-09-09 14:14:17.318 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-09-09 14:16:01.867 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:16:01.938 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 14:16:01.971 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:16:02.140 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:16:02.140 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 14:16:02.166 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:16:21.451 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 14:16:21.454 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 14:16:21.462 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 14:16:21.469 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 14:16:21.491 [main] updateProperty - ==> Parameters: 18(Integer), 42501(String), next.dbid(String), 17(Integer)
+[DEBUG] 2018-09-09 14:16:21.879 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:23.662 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 14:16:23.679 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave(String), leave(String)
+[DEBUG] 2018-09-09 14:16:23.686 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-09-09 14:16:23.773 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:16:23.776 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), leave:2:37504(String)
+[DEBUG] 2018-09-09 14:16:23.780 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:16:23.781 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:16:23.782 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), leave:2:37504(String)
+[DEBUG] 2018-09-09 14:16:23.784 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:16:23.787 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 14:16:23.795 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), leave(String)
+[DEBUG] 2018-09-09 14:16:23.833 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-09-09 14:16:23.841 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 14:16:23.843 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave:3:40004(String)
+[DEBUG] 2018-09-09 14:16:23.845 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 14:16:23.848 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:23.996 [main] insertProcessDefinition - ==> Parameters: leave:3:40004(String), http://www.kafeitu.me/demo/activiti/leave(String), 请假流程(String), leave(String), 3(Integer), 40001(String), processes/leave/leave.bpmn(String), processes/leave/leave.leave.png(String), 请假流程演示(String), false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-09-09 14:16:24.022 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:24.023 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:24.027 [main] insertDeployment - ==> Parameters: 40001(String), 请假流程(String), null, null, (String), 2018-09-09 14:16:21.444(Timestamp), null
+[DEBUG] 2018-09-09 14:16:24.030 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:24.035 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:24.037 [main] bulkInsertResource - ==> Parameters: 40002(String), processes/leave/leave.bpmn(String), java.io.ByteArrayInputStream@e08d871(ByteArrayInputStream), 40001(String), false(Boolean), 40003(String), processes/leave/leave.leave.png(String), java.io.ByteArrayInputStream@4ebb7bab(ByteArrayInputStream), 40001(String), true(Boolean)
+[DEBUG] 2018-09-09 14:16:24.108 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-09-09 14:16:24.476 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 14:16:24.477 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave(String), leave(String)
+[DEBUG] 2018-09-09 14:16:24.494 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-09-09 14:16:24.499 [main] ExecutionEntityManagerImpl - Child execution Execution[ id '40007' ] - parent '40005' created with parent 40005
+[DEBUG] 2018-09-09 14:16:24.604 [main] selectIdentityLinksByTask - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where TASK_ID_ = ? 
+[DEBUG] 2018-09-09 14:16:24.605 [main] selectIdentityLinksByTask - ==> Parameters: 40010(String)
+[DEBUG] 2018-09-09 14:16:24.721 [main] selectIdentityLinksByTask - <==      Total: 0
+[DEBUG] 2018-09-09 14:16:24.726 [main] insertHistoricVariableInstance - ==>  Preparing: insert into ACT_HI_VARINST (ID_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, NAME_, REV_, VAR_TYPE_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_, CREATE_TIME_, LAST_UPDATED_TIME_) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 14:16:24.729 [main] insertHistoricVariableInstance - ==> Parameters: 40006(String), 40005(String), 40005(String), null, applyUserId(String), 0(Integer), null(String), null, null, null, null, null, 2018-09-09 14:16:24.497(Timestamp), 2018-09-09 14:16:24.497(Timestamp)
+[DEBUG] 2018-09-09 14:16:24.849 [main] insertHistoricVariableInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:24.850 [main] insertHistoricTaskInstance - ==>  Preparing: insert into ACT_HI_TASKINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, OWNER_, ASSIGNEE_, START_TIME_, CLAIM_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TASK_DEF_KEY_, FORM_KEY_, PRIORITY_, DUE_DATE_, CATEGORY_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 14:16:24.854 [main] insertHistoricTaskInstance - ==> Parameters: 40010(String), leave:3:40004(String), 40005(String), 40007(String), 部门领导审批(String), null, null, null, null, 2018-09-09 14:16:24.603(Timestamp), null, null, null, null, deptLeaderAudit(String), null, 50(Integer), null, null, (String)
+[DEBUG] 2018-09-09 14:16:24.977 [main] insertHistoricTaskInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:24.978 [main] insertHistoricProcessInstance - ==>  Preparing: insert into ACT_HI_PROCINST ( ID_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, START_TIME_, END_TIME_, DURATION_, START_USER_ID_, START_ACT_ID_, END_ACT_ID_, SUPER_PROCESS_INSTANCE_ID_, DELETE_REASON_, TENANT_ID_, NAME_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 14:16:24.981 [main] insertHistoricProcessInstance - ==> Parameters: 40005(String), 40005(String), null, leave:3:40004(String), 2018-09-09 14:16:24.497(Timestamp), null, null, null, startevent1(String), null, null, null, (String), null
+[DEBUG] 2018-09-09 14:16:25.062 [main] insertHistoricProcessInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:25.066 [main] bulkInsertHistoricActivityInstance - ==>  Preparing: insert into ACT_HI_ACTINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, ACT_ID_, TASK_ID_, CALL_PROC_INST_ID_, ACT_NAME_, ACT_TYPE_, ASSIGNEE_, START_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TENANT_ID_ ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:25.078 [main] bulkInsertHistoricActivityInstance - ==> Parameters: 40008(String), leave:3:40004(String), 40005(String), 40007(String), startevent1(String), null, null, Start(String), startEvent(String), null, 2018-09-09 14:16:24.52(Timestamp), 2018-09-09 14:16:24.53(Timestamp), 10(Long), null, (String), 40009(String), leave:3:40004(String), 40005(String), 40007(String), deptLeaderAudit(String), 40010(String), null, 部门领导审批(String), userTask(String), null, 2018-09-09 14:16:24.534(Timestamp), null, null, null, (String)
+[DEBUG] 2018-09-09 14:16:25.104 [main] bulkInsertHistoricActivityInstance - <==    Updates: 2
+[DEBUG] 2018-09-09 14:16:25.105 [main] insertHistoricIdentityLink - ==>  Preparing: insert into ACT_HI_IDENTITYLINK (ID_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_) values (?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:25.107 [main] insertHistoricIdentityLink - ==> Parameters: 40011(String), candidate(String), null, deptLeader(String), 40010(String), null
+[DEBUG] 2018-09-09 14:16:25.225 [main] insertHistoricIdentityLink - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:25.228 [main] bulkInsertExecution - ==>  Preparing: insert into ACT_RU_EXECUTION (ID_, REV_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, ACT_ID_, IS_ACTIVE_, IS_CONCURRENT_, IS_SCOPE_,IS_EVENT_SCOPE_, IS_MI_ROOT_, PARENT_ID_, SUPER_EXEC_, ROOT_PROC_INST_ID_, SUSPENSION_STATE_, TENANT_ID_, NAME_, START_TIME_, START_USER_ID_, IS_COUNT_ENABLED_, EVT_SUBSCR_COUNT_, TASK_COUNT_, JOB_COUNT_, TIMER_JOB_COUNT_, SUSP_JOB_COUNT_, DEADLETTER_JOB_COUNT_, VAR_COUNT_, ID_LINK_COUNT_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:25.234 [main] bulkInsertExecution - ==> Parameters: 40005(String), 40005(String), null, leave:3:40004(String), null, true(Boolean), false(Boolean), true(Boolean), false(Boolean), false(Boolean), null, null, 40005(String), 1(Integer), (String), null, 2018-09-09 14:16:24.497(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 40007(String), 40005(String), null, leave:3:40004(String), deptLeaderAudit(String), true(Boolean), false(Boolean), false(Boolean), false(Boolean), false(Boolean), 40005(String), null, 40005(String), 1(Integer), (String), null, 2018-09-09 14:16:24.499(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer)
+[DEBUG] 2018-09-09 14:16:25.314 [main] bulkInsertExecution - <==    Updates: 2
+[DEBUG] 2018-09-09 14:16:25.315 [main] insertTask - ==>  Preparing: insert into ACT_RU_TASK (ID_, REV_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, PRIORITY_, CREATE_TIME_, OWNER_, ASSIGNEE_, DELEGATION_, EXECUTION_ID_, PROC_INST_ID_, PROC_DEF_ID_, TASK_DEF_KEY_, DUE_DATE_, CATEGORY_, SUSPENSION_STATE_, TENANT_ID_, FORM_KEY_, CLAIM_TIME_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 14:16:25.318 [main] insertTask - ==> Parameters: 40010(String), 部门领导审批(String), null, null, 50(Integer), 2018-09-09 14:16:24.534(Timestamp), null, null, null, 40007(String), 40005(String), leave:3:40004(String), deptLeaderAudit(String), null, null, 1(Integer), (String), null, null
+[DEBUG] 2018-09-09 14:16:25.413 [main] insertTask - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:25.414 [main] insertIdentityLink - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 14:16:25.415 [main] insertIdentityLink - ==> Parameters: 40011(String), candidate(String), null, deptLeader(String), 40010(String), null, null
+[DEBUG] 2018-09-09 14:16:25.433 [main] insertIdentityLink - <==    Updates: 1
+[DEBUG] 2018-09-09 14:16:25.433 [main] insertVariableInstance - ==>  Preparing: insert into ACT_RU_VARIABLE (ID_, REV_, TYPE_, NAME_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_) values ( ?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 14:16:25.437 [main] insertVariableInstance - ==> Parameters: 40006(String), null(String), applyUserId(String), 40005(String), 40005(String), null, null, null, null, null, null
+[DEBUG] 2018-09-09 14:16:25.494 [main] insertVariableInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 16:16:46.695 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:16:46.731 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 16:16:46.750 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:16:46.764 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:16:46.764 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 16:16:46.765 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:16:51.809 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:16:51.810 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 16:16:51.882 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:16:51.884 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 16:16:51.893 [main] updateProperty - ==> Parameters: 19(Integer), 45001(String), next.dbid(String), 18(Integer)
+[DEBUG] 2018-09-09 16:16:51.895 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 16:16:52.489 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 16:16:52.499 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave-dynamic-from(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:16:52.502 [main] selectLatestProcessDefinitionByKey - <==      Total: 0
+[DEBUG] 2018-09-09 16:16:52.507 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 16:16:52.511 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:16:52.515 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-09-09 16:16:52.519 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 16:16:52.520 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave-dynamic-from:1:42504(String)
+[DEBUG] 2018-09-09 16:16:52.522 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 16:16:52.522 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:16:52.533 [main] insertProcessDefinition - ==> Parameters: leave-dynamic-from:1:42504(String), http://www.kafeitu.me/demo/activiti/leave(String), 请假流程-动态表单(String), leave-dynamic-from(String), 1(Integer), 42501(String), processes/leave-dynamic-from/leave-dynamic-from.bpmn(String), processes/leave-dynamic-from/leave-dynamic-from.leave-dynamic-from.png(String), 请假流程演示-动态表单(String), false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-09-09 16:16:52.535 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-09-09 16:16:52.535 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:16:52.537 [main] insertDeployment - ==> Parameters: 42501(String), 请假流程(String), null, null, (String), 2018-09-09 16:16:51.807(Timestamp), null
+[DEBUG] 2018-09-09 16:16:52.540 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-09-09 16:16:52.559 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:16:52.561 [main] bulkInsertResource - ==> Parameters: 42502(String), processes/leave-dynamic-from/leave-dynamic-from.bpmn(String), java.io.ByteArrayInputStream@aa794a3(ByteArrayInputStream), 42501(String), false(Boolean), 42503(String), processes/leave-dynamic-from/leave-dynamic-from.leave-dynamic-from.png(String), java.io.ByteArrayInputStream@1dce481b(ByteArrayInputStream), 42501(String), true(Boolean)
+[DEBUG] 2018-09-09 16:16:52.582 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-09-09 16:18:13.619 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:18:13.652 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 16:18:13.659 [main] selectProperty - <==      Total: 0
+[DEBUG] 2018-09-09 16:18:13.661 [main] insertProperty - ==>  Preparing: insert into ACT_GE_PROPERTY ( NAME_, VALUE_, REV_ ) values ( ?, ?, 1 ) 
+[DEBUG] 2018-09-09 16:18:13.666 [main] insertProperty - ==> Parameters: cfg.execution-related-entities-count(String), false(String)
+[DEBUG] 2018-09-09 16:18:13.667 [main] insertProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 16:18:18.677 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:18:18.678 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 16:18:18.680 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:18:18.682 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 16:18:18.688 [main] updateProperty - ==> Parameters: 2(Integer), 2501(String), next.dbid(String), 1(Integer)
+[DEBUG] 2018-09-09 16:18:18.689 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 16:18:19.334 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 16:18:19.340 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave-dynamic-from(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:18:19.343 [main] selectLatestProcessDefinitionByKey - <==      Total: 0
+[DEBUG] 2018-09-09 16:18:19.349 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 16:18:19.352 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:18:19.355 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-09-09 16:18:19.360 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 16:18:19.361 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 16:18:19.363 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 16:18:19.363 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:18:19.368 [main] insertProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String), http://www.kafeitu.me/demo/activiti/leave(String), 请假流程-动态表单(String), leave-dynamic-from(String), 1(Integer), 1(String), processes/leave-dynamic-from/leave-dynamic-from.bpmn(String), processes/leave-dynamic-from/leave-dynamic-from.leave-dynamic-from.png(String), 请假流程演示-动态表单(String), false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-09-09 16:18:19.369 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-09-09 16:18:19.370 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:18:19.373 [main] insertDeployment - ==> Parameters: 1(String), 请假流程(String), null, null, (String), 2018-09-09 16:18:18.675(Timestamp), null
+[DEBUG] 2018-09-09 16:18:19.376 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-09-09 16:18:19.397 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:18:19.399 [main] bulkInsertResource - ==> Parameters: 2(String), processes/leave-dynamic-from/leave-dynamic-from.bpmn(String), java.io.ByteArrayInputStream@25e8a111(ByteArrayInputStream), 1(String), false(Boolean), 3(String), processes/leave-dynamic-from/leave-dynamic-from.leave-dynamic-from.png(String), java.io.ByteArrayInputStream@21022cbb(ByteArrayInputStream), 1(String), true(Boolean)
+[DEBUG] 2018-09-09 16:18:19.405 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-09-09 16:23:36.193 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:23:36.235 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 16:23:36.247 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:36.268 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:23:36.269 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 16:23:36.273 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:48.460 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-09-09 16:23:48.473 [main] selectLatestProcessDefinitionByKey - ==> Parameters: leave-dynamic-from(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:23:48.537 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:48.538 [main] selectDeployment - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+[DEBUG] 2018-09-09 16:23:48.539 [main] selectDeployment - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 16:23:48.545 [main] selectDeployment - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:48.548 [main] selectResourcesByDeploymentId - ==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc 
+[DEBUG] 2018-09-09 16:23:48.556 [main] selectResourcesByDeploymentId - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 16:23:48.563 [main] selectResourcesByDeploymentId - <==      Total: 2
+[DEBUG] 2018-09-09 16:23:48.735 [main] selectProcessDefinitionByDeploymentAndKey - ==>  Preparing: select * from ACT_RE_PROCDEF where DEPLOYMENT_ID_ = ? and KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 16:23:48.738 [main] selectProcessDefinitionByDeploymentAndKey - ==> Parameters: 1(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 16:23:48.748 [main] selectProcessDefinitionByDeploymentAndKey - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:48.757 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 16:23:48.760 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 16:23:48.763 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 16:23:48.771 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 16:23:48.773 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 16:23:48.777 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 16:23:48.779 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 16:23:48.792 [main] updateProperty - ==> Parameters: 3(Integer), 5001(String), next.dbid(String), 2(Integer)
+[DEBUG] 2018-09-09 16:23:48.819 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:48.833 [main] ExecutionEntityManagerImpl - Child execution Execution[ id '2503' ] - parent '2501' created with parent 2501
+[DEBUG] 2018-09-09 16:23:48.893 [main] selectIdentityLinksByTask - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where TASK_ID_ = ? 
+[DEBUG] 2018-09-09 16:23:48.894 [main] selectIdentityLinksByTask - ==> Parameters: 2506(String)
+[DEBUG] 2018-09-09 16:23:48.898 [main] selectIdentityLinksByTask - <==      Total: 0
+[DEBUG] 2018-09-09 16:23:48.902 [main] insertHistoricVariableInstance - ==>  Preparing: insert into ACT_HI_VARINST (ID_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, NAME_, REV_, VAR_TYPE_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_, CREATE_TIME_, LAST_UPDATED_TIME_) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 16:23:48.983 [main] insertHistoricVariableInstance - ==> Parameters: 2502(String), 2501(String), 2501(String), null, applyUserId(String), 0(Integer), null(String), null, null, null, null, null, 2018-09-09 16:23:48.831(Timestamp), 2018-09-09 16:23:48.831(Timestamp)
+[DEBUG] 2018-09-09 16:23:48.986 [main] insertHistoricVariableInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:48.987 [main] insertHistoricTaskInstance - ==>  Preparing: insert into ACT_HI_TASKINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, OWNER_, ASSIGNEE_, START_TIME_, CLAIM_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TASK_DEF_KEY_, FORM_KEY_, PRIORITY_, DUE_DATE_, CATEGORY_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 16:23:49.005 [main] insertHistoricTaskInstance - ==> Parameters: 2506(String), leave-dynamic-from:1:4(String), 2501(String), 2503(String), 部门领导审批(String), null, null, null, null, 2018-09-09 16:23:48.892(Timestamp), null, null, null, null, deptLeaderAudit(String), null, 50(Integer), null, null, (String)
+[DEBUG] 2018-09-09 16:23:49.009 [main] insertHistoricTaskInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:49.009 [main] insertHistoricProcessInstance - ==>  Preparing: insert into ACT_HI_PROCINST ( ID_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, START_TIME_, END_TIME_, DURATION_, START_USER_ID_, START_ACT_ID_, END_ACT_ID_, SUPER_PROCESS_INSTANCE_ID_, DELETE_REASON_, TENANT_ID_, NAME_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 16:23:49.015 [main] insertHistoricProcessInstance - ==> Parameters: 2501(String), 2501(String), null, leave-dynamic-from:1:4(String), 2018-09-09 16:23:48.767(Timestamp), null, null, null, startevent1(String), null, null, null, (String), null
+[DEBUG] 2018-09-09 16:23:49.064 [main] insertHistoricProcessInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:49.122 [main] bulkInsertHistoricActivityInstance - ==>  Preparing: insert into ACT_HI_ACTINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, ACT_ID_, TASK_ID_, CALL_PROC_INST_ID_, ACT_NAME_, ACT_TYPE_, ASSIGNEE_, START_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TENANT_ID_ ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:23:49.127 [main] bulkInsertHistoricActivityInstance - ==> Parameters: 2504(String), leave-dynamic-from:1:4(String), 2501(String), 2503(String), startevent1(String), null, null, Start(String), startEvent(String), null, 2018-09-09 16:23:48.839(Timestamp), 2018-09-09 16:23:48.845(Timestamp), 6(Long), null, (String), 2505(String), leave-dynamic-from:1:4(String), 2501(String), 2503(String), deptLeaderAudit(String), 2506(String), null, 部门领导审批(String), userTask(String), null, 2018-09-09 16:23:48.848(Timestamp), null, null, null, (String)
+[DEBUG] 2018-09-09 16:23:49.152 [main] bulkInsertHistoricActivityInstance - <==    Updates: 2
+[DEBUG] 2018-09-09 16:23:49.152 [main] insertHistoricIdentityLink - ==>  Preparing: insert into ACT_HI_IDENTITYLINK (ID_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_) values (?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:23:49.155 [main] insertHistoricIdentityLink - ==> Parameters: 2507(String), candidate(String), null, deptLeader(String), 2506(String), null
+[DEBUG] 2018-09-09 16:23:49.159 [main] insertHistoricIdentityLink - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:49.168 [main] bulkInsertExecution - ==>  Preparing: insert into ACT_RU_EXECUTION (ID_, REV_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, ACT_ID_, IS_ACTIVE_, IS_CONCURRENT_, IS_SCOPE_,IS_EVENT_SCOPE_, IS_MI_ROOT_, PARENT_ID_, SUPER_EXEC_, ROOT_PROC_INST_ID_, SUSPENSION_STATE_, TENANT_ID_, NAME_, START_TIME_, START_USER_ID_, IS_COUNT_ENABLED_, EVT_SUBSCR_COUNT_, TASK_COUNT_, JOB_COUNT_, TIMER_JOB_COUNT_, SUSP_JOB_COUNT_, DEADLETTER_JOB_COUNT_, VAR_COUNT_, ID_LINK_COUNT_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:23:49.192 [main] bulkInsertExecution - ==> Parameters: 2501(String), 2501(String), null, leave-dynamic-from:1:4(String), null, true(Boolean), false(Boolean), true(Boolean), false(Boolean), false(Boolean), null, null, 2501(String), 1(Integer), (String), null, 2018-09-09 16:23:48.767(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 2503(String), 2501(String), null, leave-dynamic-from:1:4(String), deptLeaderAudit(String), true(Boolean), false(Boolean), false(Boolean), false(Boolean), false(Boolean), 2501(String), null, 2501(String), 1(Integer), (String), null, 2018-09-09 16:23:48.833(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer)
+[DEBUG] 2018-09-09 16:23:49.197 [main] bulkInsertExecution - <==    Updates: 2
+[DEBUG] 2018-09-09 16:23:49.198 [main] insertTask - ==>  Preparing: insert into ACT_RU_TASK (ID_, REV_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, PRIORITY_, CREATE_TIME_, OWNER_, ASSIGNEE_, DELEGATION_, EXECUTION_ID_, PROC_INST_ID_, PROC_DEF_ID_, TASK_DEF_KEY_, DUE_DATE_, CATEGORY_, SUSPENSION_STATE_, TENANT_ID_, FORM_KEY_, CLAIM_TIME_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 16:23:49.206 [main] insertTask - ==> Parameters: 2506(String), 部门领导审批(String), null, null, 50(Integer), 2018-09-09 16:23:48.848(Timestamp), null, null, null, 2503(String), 2501(String), leave-dynamic-from:1:4(String), deptLeaderAudit(String), null, null, 1(Integer), (String), null, null
+[DEBUG] 2018-09-09 16:23:49.211 [main] insertTask - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:49.211 [main] insertIdentityLink - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 16:23:49.222 [main] insertIdentityLink - ==> Parameters: 2507(String), candidate(String), null, deptLeader(String), 2506(String), null, null
+[DEBUG] 2018-09-09 16:23:49.226 [main] insertIdentityLink - <==    Updates: 1
+[DEBUG] 2018-09-09 16:23:49.227 [main] insertVariableInstance - ==>  Preparing: insert into ACT_RU_VARIABLE (ID_, REV_, TYPE_, NAME_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_) values ( ?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 16:23:49.230 [main] insertVariableInstance - ==> Parameters: 2502(String), null(String), applyUserId(String), 2501(String), 2501(String), null, null, null, null, null, null
+[DEBUG] 2018-09-09 16:23:49.252 [main] insertVariableInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 17:01:08.327 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:01:08.403 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 17:01:08.417 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:08.456 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:01:08.457 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 17:01:08.459 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:20.730 [main] selectProcessDefinitionsByQueryCriteria - ==>  Preparing: select distinct RES.* from ACT_RE_PROCDEF RES WHERE RES.ID_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+[DEBUG] 2018-09-09 17:01:20.743 [main] selectProcessDefinitionsByQueryCriteria - ==> Parameters: leave-dynamic-from:1:4(String), 2147483647(Integer), 0(Integer)
+[DEBUG] 2018-09-09 17:01:20.775 [main] selectProcessDefinitionsByQueryCriteria - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:20.818 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:01:20.820 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:01:20.823 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:20.824 [main] selectDeployment - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+[DEBUG] 2018-09-09 17:01:20.825 [main] selectDeployment - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:01:20.829 [main] selectDeployment - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:20.832 [main] selectResourcesByDeploymentId - ==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc 
+[DEBUG] 2018-09-09 17:01:20.834 [main] selectResourcesByDeploymentId - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:01:20.844 [main] selectResourcesByDeploymentId - <==      Total: 2
+[DEBUG] 2018-09-09 17:01:21.007 [main] selectProcessDefinitionByDeploymentAndKey - ==>  Preparing: select * from ACT_RE_PROCDEF where DEPLOYMENT_ID_ = ? and KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 17:01:21.015 [main] selectProcessDefinitionByDeploymentAndKey - ==> Parameters: 1(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 17:01:21.019 [main] selectProcessDefinitionByDeploymentAndKey - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:21.028 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 17:01:21.030 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:01:21.036 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 17:01:21.091 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:01:21.092 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:01:21.093 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:21.096 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:01:21.097 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 17:01:21.100 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:01:21.101 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 17:01:21.105 [main] updateProperty - ==> Parameters: 4(Integer), 7501(String), next.dbid(String), 3(Integer)
+[DEBUG] 2018-09-09 17:01:21.107 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 17:01:21.112 [main] ExecutionEntityManagerImpl - Child execution Execution[ id '5004' ] - parent '5001' created with parent 5001
+[DEBUG] 2018-09-09 17:01:21.113 [main] selectDeployment - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+[DEBUG] 2018-09-09 17:01:21.114 [main] selectDeployment - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:01:21.115 [main] selectDeployment - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:18.394 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:05:18.438 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 17:05:18.449 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:18.472 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:05:18.472 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 17:05:18.474 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:38.838 [main] selectProcessDefinitionsByQueryCriteria - ==>  Preparing: select distinct RES.* from ACT_RE_PROCDEF RES WHERE RES.ID_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+[DEBUG] 2018-09-09 17:05:38.848 [main] selectProcessDefinitionsByQueryCriteria - ==> Parameters: leave-dynamic-from:1:4(String), 2147483647(Integer), 0(Integer)
+[DEBUG] 2018-09-09 17:05:38.936 [main] selectProcessDefinitionsByQueryCriteria - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:38.946 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:05:38.948 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:05:38.952 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:38.952 [main] selectDeployment - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+[DEBUG] 2018-09-09 17:05:38.954 [main] selectDeployment - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:05:38.959 [main] selectDeployment - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:38.962 [main] selectResourcesByDeploymentId - ==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc 
+[DEBUG] 2018-09-09 17:05:38.964 [main] selectResourcesByDeploymentId - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:05:38.975 [main] selectResourcesByDeploymentId - <==      Total: 2
+[DEBUG] 2018-09-09 17:05:39.157 [main] selectProcessDefinitionByDeploymentAndKey - ==>  Preparing: select * from ACT_RE_PROCDEF where DEPLOYMENT_ID_ = ? and KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-09-09 17:05:39.164 [main] selectProcessDefinitionByDeploymentAndKey - ==> Parameters: 1(String), leave-dynamic-from(String)
+[DEBUG] 2018-09-09 17:05:39.173 [main] selectProcessDefinitionByDeploymentAndKey - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:39.179 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 17:05:39.181 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:05:39.186 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-09-09 17:05:39.207 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:05:39.207 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:05:39.210 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:39.213 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:05:39.215 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 17:05:39.219 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:39.220 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 17:05:39.227 [main] updateProperty - ==> Parameters: 5(Integer), 10001(String), next.dbid(String), 4(Integer)
+[DEBUG] 2018-09-09 17:05:39.231 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 17:05:39.317 [main] ExecutionEntityManagerImpl - Child execution Execution[ id '7504' ] - parent '7501' created with parent 7501
+[DEBUG] 2018-09-09 17:05:39.318 [main] selectDeployment - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+[DEBUG] 2018-09-09 17:05:39.319 [main] selectDeployment - ==> Parameters: 1(String)
+[DEBUG] 2018-09-09 17:05:39.321 [main] selectDeployment - <==      Total: 1
+[DEBUG] 2018-09-09 17:05:39.377 [main] selectIdentityLinksByTask - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where TASK_ID_ = ? 
+[DEBUG] 2018-09-09 17:05:39.398 [main] selectIdentityLinksByTask - ==> Parameters: 7513(String)
+[DEBUG] 2018-09-09 17:05:39.402 [main] selectIdentityLinksByTask - <==      Total: 0
+[DEBUG] 2018-09-09 17:05:39.415 [main] bulkInsertHistoricFormProperty - ==>  Preparing: insert into ACT_HI_DETAIL (ID_, TYPE_, PROC_INST_ID_, ACT_INST_ID_, EXECUTION_ID_, TASK_ID_, TIME_, NAME_, TEXT_) values (?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.492 [main] bulkInsertHistoricFormProperty - ==> Parameters: 7506(String), FormProperty(String), 7501(String), 7505(String), 7504(String), null, 2018-09-09 17:05:39.318(Timestamp), reason(String), 放假了！！！！(String), 7507(String), FormProperty(String), 7501(String), 7505(String), 7504(String), null, 2018-09-09 17:05:39.318(Timestamp), endDate(String), 2018-09-12(String), 7508(String), FormProperty(String), 7501(String), 7505(String), 7504(String), null, 2018-09-09 17:05:39.318(Timestamp), startDate(String), 2018-09-09(String)
+[DEBUG] 2018-09-09 17:05:39.497 [main] bulkInsertHistoricFormProperty - <==    Updates: 3
+[DEBUG] 2018-09-09 17:05:39.500 [main] bulkInsertHistoricVariableInstance - ==>  Preparing: insert into ACT_HI_VARINST (ID_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, NAME_, REV_, VAR_TYPE_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_, CREATE_TIME_, LAST_UPDATED_TIME_) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.509 [main] bulkInsertHistoricVariableInstance - ==> Parameters: 7502(String), 7501(String), 7501(String), null, applyUserId(String), 0(Integer), string(String), null, null, null, 钟明晓(String), null, 2018-09-09 17:05:39.314(Timestamp), 2018-09-09 17:05:39.314(Timestamp), 7509(String), 7501(String), 7501(String), null, startDate(String), 0(Integer), date(String), null, null, 1536422400000(Long), null, null, 2018-09-09 17:05:39.322(Timestamp), 2018-09-09 17:05:39.322(Timestamp), 7510(String), 7501(String), 7501(String), null, endDate(String), 0(Integer), date(String), null, null, 1536681600000(Long), null, null, 2018-09-09 17:05:39.323(Timestamp), 2018-09-09 17:05:39.323(Timestamp), 7511(String), 7501(String), 7501(String), null, reason(String), 0(Integer), string(String), null, null, null, 放假了！！！！(String), null, 2018-09-09 17:05:39.323(Timestamp), 2018-09-09 17:05:39.323(Timestamp)
+[DEBUG] 2018-09-09 17:05:39.546 [main] bulkInsertHistoricVariableInstance - <==    Updates: 4
+[DEBUG] 2018-09-09 17:05:39.547 [main] insertHistoricTaskInstance - ==>  Preparing: insert into ACT_HI_TASKINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, OWNER_, ASSIGNEE_, START_TIME_, CLAIM_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TASK_DEF_KEY_, FORM_KEY_, PRIORITY_, DUE_DATE_, CATEGORY_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 17:05:39.552 [main] insertHistoricTaskInstance - ==> Parameters: 7513(String), leave-dynamic-from:1:4(String), 7501(String), 7504(String), 部门领导审批(String), null, null, null, null, 2018-09-09 17:05:39.376(Timestamp), null, null, null, null, deptLeaderAudit(String), null, 50(Integer), null, null, (String)
+[DEBUG] 2018-09-09 17:05:39.582 [main] insertHistoricTaskInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 17:05:39.583 [main] insertHistoricProcessInstance - ==>  Preparing: insert into ACT_HI_PROCINST ( ID_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, START_TIME_, END_TIME_, DURATION_, START_USER_ID_, START_ACT_ID_, END_ACT_ID_, SUPER_PROCESS_INSTANCE_ID_, DELETE_REASON_, TENANT_ID_, NAME_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 17:05:39.586 [main] insertHistoricProcessInstance - ==> Parameters: 7501(String), 7501(String), null, leave-dynamic-from:1:4(String), 2018-09-09 17:05:39.211(Timestamp), null, null, 钟明晓(String), startevent1(String), null, null, null, (String), null
+[DEBUG] 2018-09-09 17:05:39.589 [main] insertHistoricProcessInstance - <==    Updates: 1
+[DEBUG] 2018-09-09 17:05:39.592 [main] bulkInsertHistoricActivityInstance - ==>  Preparing: insert into ACT_HI_ACTINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, ACT_ID_, TASK_ID_, CALL_PROC_INST_ID_, ACT_NAME_, ACT_TYPE_, ASSIGNEE_, START_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TENANT_ID_ ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.597 [main] bulkInsertHistoricActivityInstance - ==> Parameters: 7505(String), leave-dynamic-from:1:4(String), 7501(String), 7504(String), startevent1(String), null, null, Start(String), startEvent(String), null, 2018-09-09 17:05:39.318(Timestamp), 2018-09-09 17:05:39.332(Timestamp), 14(Long), null, (String), 7512(String), leave-dynamic-from:1:4(String), 7501(String), 7504(String), deptLeaderAudit(String), 7513(String), null, 部门领导审批(String), userTask(String), null, 2018-09-09 17:05:39.335(Timestamp), null, null, null, (String)
+[DEBUG] 2018-09-09 17:05:39.607 [main] bulkInsertHistoricActivityInstance - <==    Updates: 2
+[DEBUG] 2018-09-09 17:05:39.608 [main] bulkInsertHistoricIdentityLink - ==>  Preparing: insert into ACT_HI_IDENTITYLINK (ID_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_) values (?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.610 [main] bulkInsertHistoricIdentityLink - ==> Parameters: 7503(String), starter(String), 钟明晓(String), null, null, 7501(String), 7514(String), candidate(String), null, deptLeader(String), 7513(String), null
+[DEBUG] 2018-09-09 17:05:39.613 [main] bulkInsertHistoricIdentityLink - <==    Updates: 2
+[DEBUG] 2018-09-09 17:05:39.616 [main] bulkInsertExecution - ==>  Preparing: insert into ACT_RU_EXECUTION (ID_, REV_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, ACT_ID_, IS_ACTIVE_, IS_CONCURRENT_, IS_SCOPE_,IS_EVENT_SCOPE_, IS_MI_ROOT_, PARENT_ID_, SUPER_EXEC_, ROOT_PROC_INST_ID_, SUSPENSION_STATE_, TENANT_ID_, NAME_, START_TIME_, START_USER_ID_, IS_COUNT_ENABLED_, EVT_SUBSCR_COUNT_, TASK_COUNT_, JOB_COUNT_, TIMER_JOB_COUNT_, SUSP_JOB_COUNT_, DEADLETTER_JOB_COUNT_, VAR_COUNT_, ID_LINK_COUNT_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.624 [main] bulkInsertExecution - ==> Parameters: 7501(String), 7501(String), null, leave-dynamic-from:1:4(String), null, true(Boolean), false(Boolean), true(Boolean), false(Boolean), false(Boolean), null, null, 7501(String), 1(Integer), (String), null, 2018-09-09 17:05:39.211(Timestamp), 钟明晓(String), false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 7504(String), 7501(String), null, leave-dynamic-from:1:4(String), deptLeaderAudit(String), true(Boolean), false(Boolean), false(Boolean), false(Boolean), false(Boolean), 7501(String), null, 7501(String), 1(Integer), (String), null, 2018-09-09 17:05:39.317(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer)
+[DEBUG] 2018-09-09 17:05:39.631 [main] bulkInsertExecution - <==    Updates: 2
+[DEBUG] 2018-09-09 17:05:39.631 [main] insertTask - ==>  Preparing: insert into ACT_RU_TASK (ID_, REV_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, PRIORITY_, CREATE_TIME_, OWNER_, ASSIGNEE_, DELEGATION_, EXECUTION_ID_, PROC_INST_ID_, PROC_DEF_ID_, TASK_DEF_KEY_, DUE_DATE_, CATEGORY_, SUSPENSION_STATE_, TENANT_ID_, FORM_KEY_, CLAIM_TIME_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[DEBUG] 2018-09-09 17:05:39.635 [main] insertTask - ==> Parameters: 7513(String), 部门领导审批(String), null, null, 50(Integer), 2018-09-09 17:05:39.335(Timestamp), null, null, null, 7504(String), 7501(String), leave-dynamic-from:1:4(String), deptLeaderAudit(String), null, null, 1(Integer), (String), null, null
+[DEBUG] 2018-09-09 17:05:39.699 [main] insertTask - <==    Updates: 1
+[DEBUG] 2018-09-09 17:05:39.701 [main] bulkInsertIdentityLink - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.703 [main] bulkInsertIdentityLink - ==> Parameters: 7503(String), starter(String), 钟明晓(String), null, null, 7501(String), null, 7514(String), candidate(String), null, deptLeader(String), 7513(String), null, null
+[DEBUG] 2018-09-09 17:05:39.717 [main] bulkInsertIdentityLink - <==    Updates: 2
+[DEBUG] 2018-09-09 17:05:39.721 [main] bulkInsertVariableInstance - ==>  Preparing: INSERT INTO ACT_RU_VARIABLE (ID_, REV_, TYPE_, NAME_, PROC_INST_ID_, EXECUTION_ID_, TASK_ID_, BYTEARRAY_ID_, DOUBLE_, LONG_ , TEXT_, TEXT2_) VALUES (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:05:39.726 [main] bulkInsertVariableInstance - ==> Parameters: 7502(String), string(String), applyUserId(String), 7501(String), 7501(String), null, null, null, null, 钟明晓(String), null, 7509(String), date(String), startDate(String), 7501(String), 7501(String), null, null, null, 1536422400000(Long), null, null, 7510(String), date(String), endDate(String), 7501(String), 7501(String), null, null, null, 1536681600000(Long), null, null, 7511(String), string(String), reason(String), 7501(String), 7501(String), null, null, null, null, 放假了！！！！(String), null
+[DEBUG] 2018-09-09 17:05:39.744 [main] bulkInsertVariableInstance - <==    Updates: 4
+[DEBUG] 2018-09-09 17:27:03.540 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:27:03.588 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-09 17:27:03.602 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:27:03.630 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:27:03.631 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-09 17:27:03.633 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:27:23.724 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:27:23.730 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:27:23.764 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:27:23.767 [main] selectIdentityLinksByProcessDefinition - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 17:27:23.772 [main] selectIdentityLinksByProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:27:23.783 [main] selectIdentityLinksByProcessDefinition - <==      Total: 0
+[DEBUG] 2018-09-09 17:27:23.955 [main] selectProcessDefinition - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+[DEBUG] 2018-09-09 17:27:23.956 [main] selectProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:27:23.968 [main] selectProcessDefinition - <==      Total: 1
+[DEBUG] 2018-09-09 17:27:23.974 [main] selectIdentityLinksByProcessDefinition - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-09-09 17:27:23.975 [main] selectIdentityLinksByProcessDefinition - ==> Parameters: leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:27:23.980 [main] selectIdentityLinksByProcessDefinition - <==      Total: 0
+[DEBUG] 2018-09-09 17:27:23.990 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-09 17:27:23.993 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-09-09 17:27:24.002 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-09 17:27:24.010 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-09-09 17:27:24.034 [main] updateProperty - ==> Parameters: 6(Integer), 12501(String), next.dbid(String), 5(Integer)
+[DEBUG] 2018-09-09 17:27:24.041 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-09-09 17:27:24.060 [main] insertIdentityLink - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-09-09 17:27:24.347 [main] insertIdentityLink - ==> Parameters: 10001(String), candidate(String), zmx(String), null, null, null, leave-dynamic-from:1:4(String)
+[DEBUG] 2018-09-09 17:27:24.405 [main] insertIdentityLink - <==    Updates: 1

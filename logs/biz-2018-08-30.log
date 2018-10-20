@@ -1,0 +1,42 @@
+[DEBUG] 2018-08-30 10:19:00.999 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-30 10:19:01.087 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-30 10:19:01.097 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-30 10:19:01.114 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-30 10:19:01.114 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-30 10:19:01.115 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-30 10:19:07.668 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-30 10:19:07.669 [main] selectProperty - ==> Parameters: next.dbid(String)
+[DEBUG] 2018-08-30 10:19:07.673 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-30 10:19:07.676 [main] updateProperty - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+[DEBUG] 2018-08-30 10:19:07.684 [main] updateProperty - ==> Parameters: 5(Integer), 10001(String), next.dbid(String), 4(Integer)
+[DEBUG] 2018-08-30 10:19:07.687 [main] updateProperty - <==    Updates: 1
+[DEBUG] 2018-08-30 10:19:09.644 [main] selectLatestProcessDefinitionByKey - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+[DEBUG] 2018-08-30 10:19:09.652 [main] selectLatestProcessDefinitionByKey - ==> Parameters: myProcess(String), myProcess(String)
+[DEBUG] 2018-08-30 10:19:09.701 [main] selectLatestProcessDefinitionByKey - <==      Total: 1
+[DEBUG] 2018-08-30 10:19:09.749 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-30 10:19:09.752 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: message(String), myProcess:1:4(String)
+[DEBUG] 2018-08-30 10:19:09.755 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-30 10:19:09.757 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==>  Preparing: select * from ACT_RU_EVENT_SUBSCR WHERE (EVENT_TYPE_ = ?) and PROC_DEF_ID_ = ? and EXECUTION_ID_ is null and PROC_INST_ID_ is null and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+[DEBUG] 2018-08-30 10:19:09.757 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - ==> Parameters: signal(String), myProcess:1:4(String)
+[DEBUG] 2018-08-30 10:19:09.759 [main] selectEventSubscriptionsByTypeAndProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-30 10:19:09.761 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+[DEBUG] 2018-08-30 10:19:09.770 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - ==> Parameters: timer-start-event(String), myProcess(String)
+[DEBUG] 2018-08-30 10:19:09.818 [main] selectTimerJobByTypeAndProcessDefinitionKeyNoTenantId - <==      Total: 0
+[DEBUG] 2018-08-30 10:19:09.845 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+[DEBUG] 2018-08-30 10:19:09.848 [main] selectProcessDefinitionInfoByProcessDefinitionId - ==> Parameters: myProcess:2:7504(String)
+[DEBUG] 2018-08-30 10:19:09.858 [main] selectProcessDefinitionInfoByProcessDefinitionId - <==      Total: 0
+[DEBUG] 2018-08-30 10:19:09.860 [main] insertProcessDefinition - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-30 10:19:09.897 [main] insertProcessDefinition - ==> Parameters: myProcess:2:7504(String), http://www.activiti.org/test(String), My process(String), myProcess(String), 2(Integer), 7501(String), processes/MyProcess.bpmn(String), processes/MyProcess.myProcess.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null
+[DEBUG] 2018-08-30 10:19:09.898 [main] insertProcessDefinition - <==    Updates: 1
+[DEBUG] 2018-08-30 10:19:09.898 [main] insertDeployment - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_) values(?, ?, ?, ?, ?, ?, ?) 
+[DEBUG] 2018-08-30 10:19:09.901 [main] insertDeployment - ==> Parameters: 7501(String), 出差报销流程(String), null, null, (String), 2018-08-30 10:19:07.665(Timestamp), null
+[DEBUG] 2018-08-30 10:19:09.905 [main] insertDeployment - <==    Updates: 1
+[DEBUG] 2018-08-30 10:19:09.911 [main] bulkInsertResource - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+[DEBUG] 2018-08-30 10:19:09.914 [main] bulkInsertResource - ==> Parameters: 7502(String), processes/MyProcess.bpmn(String), java.io.ByteArrayInputStream@d1d85d0(ByteArrayInputStream), 7501(String), false(Boolean), 7503(String), processes/MyProcess.myProcess.png(String), java.io.ByteArrayInputStream@115a7e51(ByteArrayInputStream), 7501(String), true(Boolean)
+[DEBUG] 2018-08-30 10:19:09.989 [main] bulkInsertResource - <==    Updates: 2
+[DEBUG] 2018-08-30 17:39:20.559 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-30 17:39:20.615 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-08-30 17:39:20.627 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-08-30 17:39:20.648 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-08-30 17:39:20.649 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-08-30 17:39:20.650 [main] selectProperty - <==      Total: 1

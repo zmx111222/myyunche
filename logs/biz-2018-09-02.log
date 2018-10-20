@@ -1,0 +1,36 @@
+[DEBUG] 2018-09-02 12:00:04.217 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:00:04.377 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 12:00:04.528 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:00:04.712 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:00:04.713 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 12:00:04.715 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:00:49.170 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:00:49.211 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 12:00:49.220 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:00:49.241 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:00:49.241 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 12:00:49.242 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:02:04.494 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:02:04.538 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 12:02:04.546 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:02:04.570 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:02:04.571 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 12:02:04.572 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:16:34.996 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:16:35.036 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 12:16:35.046 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 12:16:35.074 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 12:16:35.074 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 12:16:35.076 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 16:08:22.251 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 16:08:22.325 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 16:08:22.333 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 16:08:22.399 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 16:08:22.399 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 16:08:22.403 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 16:22:00.874 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 16:22:00.932 [main] selectProperty - ==> Parameters: schema.version(String)
+[DEBUG] 2018-09-02 16:22:00.942 [main] selectProperty - <==      Total: 1
+[DEBUG] 2018-09-02 16:22:00.963 [main] selectProperty - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+[DEBUG] 2018-09-02 16:22:00.964 [main] selectProperty - ==> Parameters: cfg.execution-related-entities-count(String)
+[DEBUG] 2018-09-02 16:22:00.965 [main] selectProperty - <==      Total: 1
